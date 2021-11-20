@@ -41,7 +41,7 @@ const products = [
   {
     _id: '4',
     name: 'UCLA Hat',
-    image: '/images/ucla_hat.jpg',
+    image: '/images/ucla_hat.jpeg',
     description:
       'The ultimate hat to attract more people',
     brand: 'UCLA',
