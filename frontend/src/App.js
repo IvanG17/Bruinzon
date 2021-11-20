@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screen/homescreen'
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className= 'py-1'>
+      <main className= 'py-3'>
         <Container> 
         <HomeScreen />
         </Container>

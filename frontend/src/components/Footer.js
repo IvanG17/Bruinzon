@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer>
         <Container>
-            <Col class= 'text-center py-3'>
+            <Col class= 'text-center py-7'>
                 Please buy something.
             </Col>
         </Container>
