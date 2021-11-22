@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -12,18 +12,20 @@ import ProductScreen from './screen/ProductScreen'
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Header />
       <main className= 'py-3'>
         <Container> 
           <Routes>
-            <Route exact path='/' element={<HomeScreen/>} />
-            <Route path='/product/:id' element={<ProductScreen/>} />
+            <Route path='/' element={<HomeScreen/>} exact />
+            <Route path='/products/:id' element={<ProductScreen/>}/>
+            
           </Routes>
+          
         </Container>
       </main>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 }
 
